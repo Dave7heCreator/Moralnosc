@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="input-container">
+      <form name="formValidation" action="form_first.php" method="POST">
+        <div class="input-row">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="First Name*"
+            required
+          />
+        </div>
+        <div class="input-row">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Last Name*"
+            required
+          />
+        </div>
+        <div class="input-row">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail*"
+            required
+          />
+        </div>
+        <div class="input-submit">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+    ></script>
+    <script type="text/javascript" src="./coding.js"></script>
+  </body>
+</html>

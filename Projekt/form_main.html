@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #1f8fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .container label {
+            display: flex;
+            align-items: center;
+            margin: 30px 0 10px 0;
+            justify-content: left;
+        }
+
+        .container input[type="radio"] {
+            margin: 10px 5px;
+            vertical-align: middle;
+        }
+
+        .container button {
+            margin-top: 20px;
+            background-color: #1f8fff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Questionnaire</h2>
+        <form action="compare.php" method="POST">
+            <label for="larry">In The Walking Dead, what did you do being trapped with Larry?</label>
+            <div class="radio-container">
+                <input type="radio" name="larry" value="kill" required /><span>Kill Larry</span>
+            </div>
+            <div class="radio-container">
+                <input type="radio" name="larry" value="change" required /><span>Let him change</span>
+            </div>
+            <div class="radio-container">
+                <input type="radio" name="larry" value="others" required /><span>Let others decide</span>
+            </div>
+
+            <label for="jimmy">In Red Dead Redemption 2, did you save Jimmy Brooks?</label>
+            <div class="radio-container">
+                <input type="radio" name="jimmy" value="yes" required /><span>Yes</span>
+            </div>
+            <div class="radio-container">
+                <input type="radio" name="jimmy" value="no" required /><span>No</span>
+            </div>
+            <div class="radio-container">
+                <input type="radio" name="jimmy" value="killed" required /><span>Saved and then killed</span>
+            </div>
+
+            <label for="character">Which character did you let die in Grand Theft Auto 5?</label>
+            <div class="radio-container">
+                <input type="radio" name="character" value="michael" required /><span>Michael De Santa</span>
+            </div>
+            <div class="radio-container">
+                <input type="radio" name="character" value="trevor" required /><span>Trevor Philips</span>
+            </div>
+            <div class="radio-container">
+                <input type="radio" name="character" value="nobody" required /><span>Nobody died</span>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
